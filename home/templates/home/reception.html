@@ -1,0 +1,11 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block styles %}{% static 'css/reception.css' %}{% endblock %}
+{% block app %}{% static 'js/reception.js' %}{% endblock %}
+
+{% block title %}Laurent Jouron{% endblock %}
+
+{% block content %}
+    <a href="{% url 'index' %}"><canvas id='canvas1'></canvas></a>
+{% endblock %}
